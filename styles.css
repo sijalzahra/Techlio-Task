@@ -11,7 +11,7 @@ body{
 
 section{
     font-family: 'Rubik', sans-serif;
-    background-image: url(../../images/slider1-1.png);
+    background-image: url(./images/slider1-1.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 654px;
