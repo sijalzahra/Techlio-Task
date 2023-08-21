@@ -130,8 +130,8 @@ header{
 
 .longblock-1{
     position: absolute;
-    left: -30px;
-    bottom: 0;
+    left: -35px;
+    bottom: 20px;
     width: 52px;
     height: 220px;
     z-index: 2;
@@ -146,15 +146,15 @@ header{
 
 .longblock-3{
     position: absolute;
-    bottom: 150px;
-    left: 760px;
+    bottom: 170px;
+    left: 97px;
     width: 65px;
 }
 
 .sheild-1{
     position: absolute;
-    left: 665px;
-    bottom: 280px;
+    left: 0px;
+    bottom: 312px;
     width: 85px;
     height: 130px;
     z-index: 2;
