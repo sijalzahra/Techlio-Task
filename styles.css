@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    font-family: 'Rubik', sans-serif;
+    background-image: url(../TechlioTask/images/slider1-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 654px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.header-left{
+    display: flex;
+    gap: 30px;
+}
+
+.header-menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 17px;
+    padding: 10px 10px;
+    color: rgb(87, 0, 128);
+}
+
+.header-menu li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.header-menu ul li{
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.header-menu ul li::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    color: rgb(66, 69, 71);
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.header-menu ul li:hover::after{
+    transform: scale(1);
+}
+
+.get-in-touch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #12367a;
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 0px 20px;
+}
+
+.below-header{
+    display: flex;
+}
+
+.content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    padding: 40px 40px;
+    padding-top: 110px;
+    padding-left: 160px;
+}
+
+.c1-heading{
+    font-size: small;
+    color: white;
+}
+
+.c1-quality{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.c1-solutions{
+    color: rgb(81, 178, 255);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.c1-para{
+    font-size: small;
+    color: white;
+    padding-bottom: 17px;
+}
+
+.c1-discover{
+    border: 0.5px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.blocks-img{
+    position: relative;
+    height: 530px;
+    width: 600px;
+    z-index: 1;
+}
+
+.longblock-1{
+    position: absolute;
+    left: 620px;
+    bottom: -15px;
+    width: 52px;
+    height: 220px;
+    z-index: 2;
+}
+
+.longblock-2{
+    position: absolute;
+    bottom: 200px;
+    left: 1120px;
+    width: 50px;
+}
+
+.longblock-3{
+    position: absolute;
+    bottom: 150px;
+    left: 760px;
+    width: 65px;
+}
+
+.sheild-1{
+    position: absolute;
+    left: 665px;
+    bottom: 280px;
+    width: 85px;
+    height: 130px;
+    z-index: 2;
+}
+
+.sheild-2{
+    position: absolute;
+    left: 1123px;
+    bottom: 427px;
+    width: 45px;
+    z-index: 2;
+}
+
+.laptop{
+    position: absolute;
+    left: 873px;
+    bottom: 250px;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+}
+
+.laptop-2{
+    position: absolute;
+    left: 833px;
+    bottom: 210px;
+    width: 290px;
+    height: 210px;
+    z-index: 2;
+}
+
+.laptop-3{
+    position: absolute;
+    left: 840px;
+    bottom: 360px;
+    width: 250px;
+    height: 120px;
+    z-index: 2;
+}
+
+.laptop-4{
+    position: absolute;
+    left: 1040px;
+    bottom: 300px;
+    height: 80px;
+    z-index: 4;
+}
+
+.right-light{
+    position: absolute;
+    left: 1183px;
+    bottom: 300px;
+    height: 220px;
+    z-index: 2;
+}
+
+.man-laptop{
+    position: absolute;
+    left: 734px;
+    bottom: 160px;
+    width: 120px;
+    z-index: 2;
+}
+
+.lower-block-man{
+    position: absolute;
+    left: 1090px;
+    bottom: 142px;
+    height: 100px;
+    z-index: 2;
+}
+
+.lower-block-light{
+    position: absolute;
+    left: 1073px;
+    bottom: 142px;
+    height: 146px;
+    z-index: 3;
+}
