@@ -73,6 +73,7 @@ header{
 
 .below-header{
     display: flex;
+    width: 100%;
 }
 
 .content-1{
@@ -162,16 +163,16 @@ header{
 
 .sheild-2{
     position: absolute;
-    left: 1123px;
-    bottom: 427px;
+    left: 452px;
+    bottom: 465px;
     width: 45px;
     z-index: 2;
 }
 
 .laptop{
     position: absolute;
-    left: 873px;
-    bottom: 250px;
+    left: 202px;
+    bottom: 295px;
     width: 200px;
     height: 200px;
     z-index: 3;
@@ -179,17 +180,17 @@ header{
 
 .laptop-2{
     position: absolute;
-    left: 833px;
-    bottom: 210px;
-    width: 290px;
+    left: 170px;
+    bottom: 250px;
+    width: 300px;
     height: 210px;
     z-index: 2;
 }
 
 .laptop-3{
     position: absolute;
-    left: 840px;
-    bottom: 360px;
+    left: 165px;
+    bottom: 395px;
     width: 250px;
     height: 120px;
     z-index: 2;
@@ -197,40 +198,40 @@ header{
 
 .laptop-4{
     position: absolute;
-    left: 1040px;
-    bottom: 300px;
+    left: 370px;
+    bottom: 350px;
     height: 80px;
     z-index: 4;
 }
 
 .right-light{
     position: absolute;
-    left: 1183px;
-    bottom: 300px;
+    left: 520px;
+    bottom: 340px;
     height: 220px;
     z-index: 2;
 }
 
 .man-laptop{
     position: absolute;
-    left: 734px;
-    bottom: 160px;
+    left: 70px;
+    bottom: 197px;
     width: 120px;
     z-index: 2;
 }
 
 .lower-block-man{
     position: absolute;
-    left: 1090px;
-    bottom: 142px;
+    left: 422px;
+    bottom: 180px;
     height: 100px;
     z-index: 2;
 }
 
 .lower-block-light{
     position: absolute;
-    left: 1073px;
-    bottom: 142px;
+    left: 405px;
+    bottom: 180px;
     height: 146px;
     z-index: 3;
 }
