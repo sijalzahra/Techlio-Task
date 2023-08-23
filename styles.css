@@ -14,18 +14,26 @@ section{
     background-image: url(./images/slider1-1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 654px;
+    height: 730px;
     display: flex;
     flex-direction: column;
     gap: 70px;
 }
 
 
-header{
+.header{
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
+    position: sticky;
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.header.scrolled{
+    background-color: white;
+}
+
 .header-left{
     display: flex;
     gap: 30px;
@@ -37,13 +45,31 @@ header{
     gap: 30px;
     font-size: 17px;
     padding: 10px 10px;
-    color: rgb(87, 0, 128);
 }
 
-.header-menu li:hover{
-    color: white;
+.header-menu a{
+    text-decoration: none;
+    color: rgb(87, 0, 128);
     cursor: pointer;
 }
+
+.header-menu a:hover{
+    color: white;
+}
+
+.header-menu a:hover::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #3498db; 
+    position: relative;
+    bottom: -8px; 
+  }
+
+.header.scrolled .header-menu a{
+    color: black;
+}
+
 
 .get-in-touch{
     display: flex;
@@ -54,6 +80,19 @@ header{
     border-radius: 25px;
     font-weight: 500;
     padding: 0px 20px;
+    cursor: pointer;
+}
+
+.get-in-touch:hover{
+    background-color: #12367a;
+    color: white;
+    font-weight: 400;
+}
+
+header.scrolled .get-in-touch{
+    background-color: #12367a;
+    color: white;
+    font-weight: 400;
 }
 
 .container-1{
@@ -111,15 +150,15 @@ header{
 
 .blocks-img{
     position: relative;
-    height: 530px;
-    width: 600px;
+    width: 655px;
     z-index: 1;
+    top: -50px;
 }
 
 .longblock-1{
     position: absolute;
     left: -35px;
-    bottom: 20px;
+    bottom: 88px;
     width: 52px;
     height: 220px;
     z-index: 2;
@@ -127,22 +166,22 @@ header{
 
 .longblock-2{
     position: absolute;
-    bottom: 240px;
-    left: 450px;
+    bottom: 304px;
+    left: 508px;
     width: 50px;
 }
 
 .longblock-3{
     position: absolute;
-    bottom: 170px;
-    left: 97px;
+    bottom: 259px;
+    left: 113px;
     width: 65px;
 }
 
 .sheild-1{
     position: absolute;
-    left: 0px;
-    bottom: 312px;
+    left: 4px;
+    bottom: 389px;
     width: 85px;
     height: 130px;
     z-index: 2;
@@ -150,16 +189,16 @@ header{
 
 .sheild-2{
     position: absolute;
-    left: 452px;
-    bottom: 465px;
+    left: 511px;
+    bottom: 531px;
     width: 45px;
     z-index: 2;
 }
 
 .laptop{
     position: absolute;
-    left: 202px;
-    bottom: 295px;
+    left: 235px;
+    bottom: 375px;
     width: 200px;
     height: 200px;
     z-index: 3;
@@ -167,17 +206,17 @@ header{
 
 .laptop-2{
     position: absolute;
-    left: 170px;
-    bottom: 250px;
-    width: 300px;
+    left: 192px;
+    bottom: 324px;
+    width: 320px;
     height: 210px;
     z-index: 2;
 }
 
 .laptop-3{
     position: absolute;
-    left: 165px;
-    bottom: 395px;
+    left: 199px;
+    bottom: 469px;
     width: 250px;
     height: 120px;
     z-index: 2;
@@ -185,40 +224,40 @@ header{
 
 .laptop-4{
     position: absolute;
-    left: 370px;
-    bottom: 350px;
+    left: 399px;
+    bottom: 429px;
     height: 80px;
     z-index: 4;
 }
 
 .right-light{
     position: absolute;
-    left: 520px;
-    bottom: 340px;
+    left: 575px;
+    bottom: 424px;
     height: 220px;
     z-index: 2;
 }
 
 .man-laptop{
     position: absolute;
-    left: 70px;
-    bottom: 197px;
-    width: 120px;
+    left: 83px;
+    bottom: 263px;
+    width: 125px;
     z-index: 2;
 }
 
 .lower-block-man{
     position: absolute;
-    left: 422px;
-    bottom: 180px;
+    left: 472px;
+    bottom: 238px;
     height: 100px;
     z-index: 2;
 }
 
 .lower-block-light{
     position: absolute;
-    left: 405px;
-    bottom: 180px;
+    left: 455px;
+    bottom: 239px;
     height: 146px;
     z-index: 3;
 }
@@ -226,7 +265,8 @@ header{
 .container-2{
     display: flex;
     padding: 30px 50px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
 }
 
 .img-2{
@@ -332,6 +372,13 @@ header{
     width: 390px;
     height: 250px;
     border: 0.3px solid rgb(230, 227, 227);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.service-content:hover{
+    background-color: #1487e3;
+    color: white;
 }
 
 .caption-service{
@@ -340,8 +387,9 @@ header{
 
 .container-4{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 30px 30px;
     margin-top: 20px;
 }
@@ -354,14 +402,10 @@ header{
 .content-4{
     font-size: 30px;
     line-height: 1.5;
+    margin-left: -500px;
 }
 
 .content-4 strong{
     color: #1487e3;
+   
 }
-
-/* .content4::after{
-    background-image: url(./images/process.png);
-    position: absolute;
-
-} */
