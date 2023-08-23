@@ -19,6 +19,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 7rem;
 }
 
 .header {
@@ -31,7 +32,8 @@ section{
 
 .header.scrolled {
     background-color: white;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     padding: 16px 50px;
     z-index: 12;
@@ -268,12 +270,14 @@ header.scrolled .get-in-touch{
 .container-2{
     display: flex;
     padding: 30px 50px;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .img-2{
-    width: 50%;
+    width: 100%;
 }
 
 .about-img{
@@ -286,7 +290,7 @@ header.scrolled .get-in-touch{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    width: 40%;
+    width: 80%;
 }
 
 .heading-content2{
@@ -303,7 +307,7 @@ header.scrolled .get-in-touch{
 .caption-content2::before{
     content: "";
     position: absolute;
-    left: -18%;
+    left: -15%;
     top: 50%;
     width: 70px;
     height: 2px;
@@ -338,7 +342,7 @@ header.scrolled .get-in-touch{
 .container-3{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    max-width: 100%;
 }
 
 .content-3{
@@ -361,18 +365,20 @@ header.scrolled .get-in-touch{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    max-width: 100%;
 }
 
 .service-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-basis: 30%;
     gap: 20px;
     align-items: center;
     border-radius: 20px;
     box-shadow: 0px 2px 4px rgb(204, 203, 203);
-    width: 390px;
     height: 250px;
     border: 0.3px solid rgb(230, 227, 227);
     cursor: pointer;
@@ -390,22 +396,22 @@ header.scrolled .get-in-touch{
 
 .container-4{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px 30px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .process-img{
-    width: 1195px;
+    width: 100%;
     height: 662px;
+    margin-top: -50px;
 }
 
 .content-4{
     font-size: 30px;
     line-height: 1.5;
-    margin-left: -500px;
 }
 
 .content-4 strong{
