@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container-5 {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .slider-buttons button {
+    padding: 5px 10px;
+    cursor: pointer;
+   border: none;
+
+  }
+  
+  .prev-button {
+    background: url(./images/Click-Area.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .next-button {
+    background: url(./images/Arrow-Right.png) no-repeat center;
+    background-size: contain;
+  }
+</style>
+</head>
+<body>
+<div class="container-5">
+  <div class="slider">
+    <div class="slide"><img src="./images/thumbnails-1.jpg" alt="Image 1"></div>
+    <div class="slide"><img src="./images/thumbnails-2.jpg" alt="Image 2"></div>
+    <div class="slide"><img src="./images/thumbnails-3.jpg" alt="Image 3"></div>
+    <div class="slide"><img src="./images/thumbnails-4.jpg" alt="Image 4"></div>
+    <div class="slide"><img src="./images/defaultvaluethumbnails-5.jpg" alt="Image 5"></div>
+  </div>
+  <div class="slider-buttons">
+    <button class="prev-button" id="prevBtn"></button>
+    <button class="next-button" id="nextBtn"></button>
+  </div>
+</div>
+<script>
+  const images = [
+    'images/thumbnails-1.jpg',
+    'images/thumbnails-2.jpg',
+    'images/thumbnails-3.jpg',
+    'images/thumbnails-4.jpg',
+    'images/defaultvaluethumbnails-5.jpg'
+  ];
+
+  const slider = document.querySelector('.slider');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  let currentIndex = 0;
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
+  });
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .slider-buttons button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .slider-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .prev-button {
+    position: absolute;
+    left: 0;
+  }
+
+  .next-button {
+    position: absolute;
+    right: 0;
+  }
+</style>
+</head>
+<body>
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide">
+      <img src="./images/thumbnails-1.jpg" alt="Image 1">
+      <button class="slider-buttons prev-button" id="prevBtn">Previous</button>
+      <button class="slider-buttons next-button" id="nextBtn">Next</button>
+    </div>
+    <div class="slide">
+      <img src="./images/thumbnails-2.jpg" alt="Image 2">
+      <button class="slider-buttons prev-button" id="prevBtn">Previous</button>
+      <button class="slider-buttons next-button" id="nextBtn">Next</button>
+    </div>
+    <div class="slide">
+      <img src="./images/thumbnails-3.jpg" alt="Image 3">
+      <button class="slider-buttons prev-button" id="prevBtn">Previous</button>
+      <button class="slider-buttons next-button" id="nextBtn">Next</button>
+    </div>
+    <div class="slide">
+      <img src="./images/thumbnails-4.jpg" alt="Image 4">
+      <button class="slider-buttons prev-button" id="prevBtn">Previous</button>
+      <button class="slider-buttons next-button" id="nextBtn">Next</button>
+    </div>
+    <div class="slide">
+      <img src="./images/defaultvaluethumbnails-5.jpg" alt="Image 5">
+      <button class="slider-buttons prev-button" id="prevBtn">Previous</button>
+      <button class="slider-buttons next-button" id="nextBtn">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const prevBtns = document.querySelectorAll('.prev-button');
+  const nextBtns = document.querySelectorAll('.next-button');
+
+  let currentIndex = 0;
+
+  prevBtns.forEach((prevBtn, index) => {
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlider();
+    });
+  });
+
+  nextBtns.forEach((nextBtn, index) => {
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlider();
+    });
+  });
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .slider-buttons button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .prev-button {
+    position: absolute;
+    left: 0;
+  }
+
+  .next-button {
+    position: absolute;
+    right: 0;
+  }
+
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide">
+      <img src="./images/thumbnails-1.jpg" alt="Image 1">
+      <button class="slider-buttons prev-button" id="prevBtn"><img class="arrow-icon" src="./images/Click-Area.png" alt="Previous"></button>
+      <button class="slider-buttons next-button" id="nextBtn"><img class="arrow-icon" src="./images/Arrow-Right.png" alt="Next"></button>
+    </div>
+
+    <div class="slide">
+      <img src="./images/thumbnails-2.jpg" alt="Image 1">
+      <button class="slider-buttons prev-button" id="prevBtn"><img class="arrow-icon" src="./images/Click-Area.png" alt="Previous"></button>
+      <button class="slider-buttons next-button" id="nextBtn"><img class="arrow-icon" src="./images/Arrow-Right.png" alt="Next"></button>
+    </div>
+
+    <div class="slide">
+      <img src="./images/thumbnails-3.jpg" alt="Image 1">
+      <button class="slider-buttons prev-button" id="prevBtn"><img class="arrow-icon" src="./images/Click-Area.png" alt="Previous"></button>
+      <button class="slider-buttons next-button" id="nextBtn"><img class="arrow-icon" src="./images/Arrow-Right.png" alt="Next"></button>
+    </div>
+    <!-- Repeat the slide structure for other images -->
+  </div>
+</div>
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const prevBtns = document.querySelectorAll('.prev-button');
+  const nextBtns = document.querySelectorAll('.next-button');
+
+  let currentIndex = 0;
+
+  prevBtns.forEach((prevBtn, index) => {
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlider();
+    });
+  });
+
+  nextBtns.forEach((nextBtn, index) => {
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlider();
+    });
+  });
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+</body>
+</html> -->

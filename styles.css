@@ -270,19 +270,27 @@ header.scrolled .get-in-touch{
 .container-2{
     display: flex;
     padding: 30px 50px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    max-width: 85%;
+    width: 100%;
     margin: 0 auto;
+    position: relative;
+}
+
+.container-2::after{
+    content: url(./images/about-bg.png);
+    position: absolute;
+    right: 0;
 }
 
 .img-2{
-    width: 100%;
+    height: auto;
+    width: 42.5%;
 }
 
 .about-img{
-    height: 530px;
-    width: 560px;
+    height: auto;
+    width: 100%;
 }
 
 .content-2{
@@ -291,6 +299,8 @@ header.scrolled .get-in-touch{
     justify-content: center;
     gap: 20px;
     padding-left: 20px;
+    width: 42.5%;
+    position: relative;
 }
 
 .heading-content2{
@@ -425,6 +435,20 @@ header.scrolled .get-in-touch{
     flex-direction: column;
     max-width: 100%;
     padding-top: 50px;
+    position: relative;
+}
+
+.application-categories::after{
+    content: url(./images/circle-2.png);
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
+
+.application-categories::before{
+    content: url(./images/circle1.png);
+    position: absolute;
+    left: 0;
 }
 
 .content-5{
@@ -478,5 +502,200 @@ header.scrolled .get-in-touch{
 
 .img-5{
     height: 80px;
-    width: 80px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px ;
+    padding-bottom: 50px;
+}
+.content-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.heading-content6{
+    font-size: 40px;
+}
+
+.para-content6{
+    font-weight: lighter;
+    color: rgb(99, 99, 99);
+    padding: 25px 0px;
+    line-height: 1.7;
+    text-align: center;
+    width: 65%;
+}
+
+.view-proj-button{
+    outline: none;
+    color: #ffffff;
+    border: none;
+    background-color: #2e7ee5;
+    background-image: linear-gradient(to left, #2e7ee5 0%, #79cce4 0%, #2e7ee5 100%);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.view-proj-button:hover{
+    background-image: linear-gradient(to right, #2e7ee5 0%, #79cce4 0%,#2e7ee5 100%);
+}
+
+.slider-images {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 60px;
+  }
+
+  .slider-buttons button {
+    cursor: pointer;
+    border: none;
+  }
+  
+  .prev-button {
+    background: url(./images/Click-Area.png) no-repeat center;
+    background-size: contain;
+    height: 50px;
+    width: 5%;
+  }
+
+  .next-button {
+    background: url(./images/Click-Area.png) no-repeat center;
+    background-size: contain;
+    height: 50px;
+    width: 5%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .container-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./images/team-bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .heading-content7{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.para-content7{
+    font-weight: lighter;
+    padding: 25px 0px;
+    line-height: 1.7;
+    text-align: center;
+    color: white;
+}
+
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+}
+
+.team-buttons button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.team-button1 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.team-info{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member-pic{
+    height: 30%;
+}
+
+.member-pic img{
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info{
+    text-align: center;
+    height: 80%;
+}
+
+.member-info p{
+    padding-top: 20px;
+    color: rgb(78, 77, 77);
+}
+
+.member-info .title{
+    height: 20%;
 }
