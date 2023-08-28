@@ -275,6 +275,7 @@ header.scrolled .get-in-touch{
     width: 100%;
     margin: 0 auto;
     position: relative;
+    flex-basis: 50%;
 }
 
 .container-2::after{
@@ -698,4 +699,227 @@ header.scrolled .get-in-touch{
 
 .member-info .title{
     height: 20%;
+}
+
+.container-8{
+    padding-top: 50px ;
+}
+
+.content-8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.heading1-content8{
+    color: #1487e3;
+}
+
+.heading2-content8{
+    font-size: 40px;
+}
+
+.testimony-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.testimony{
+    background-color: rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.testimony-content{
+    padding: 10px;
+    line-height: 2;
+ 
+}
+
+.testimony-content::after{
+    content: url(./images/Quotes.png);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.testimony-content p{
+    color: rgb(105, 105, 104);
+}
+
+.testimony-content h5{
+    color: rgb(105, 105, 104);
+    font-weight: lighter;
+}
+
+.testi-img{
+    width: 220px;
+    height: 230px;
+    padding: 7px;
+}
+
+.testimony-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+.testi-buttons{
+    color: blue;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container-9{
+    margin-top: 50px;
+}
+
+.content-9{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.heading-content9{
+    font-size: 40px;
+}
+
+.client{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+.client-logo{
+    flex-basis: 23%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(205, 204, 204);
+}
+
+.client-img{
+    height: auto;
+    width: 100%;
+}
+
+.container-10{
+    margin-top: 50px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-10{
+    height: auto;
+    width: 42%;
+    padding: 100px 20px;
+}
+
+.heading-content10{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.para-content10{
+    font-weight: lighter;
+    padding: 25px 0px;
+    line-height: 1.7;
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    border: none;
+    border-radius: 30px;
+    padding: 18px 15px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    outline: none;
+    color: #666565;
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #e2f2fd;
+}
+
+
+form button {
+    background-color: #2e7ee5;
+    background-image: linear-gradient(to left, #2e7ee5 0%, #79cce4 0%, #2e7ee5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 18px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer{
+    background-image: url(./images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-11{
+    display: flex;
+    padding: 90px 20px;
+    gap: 250px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 8px;
+}
+
+.footer-logo-caption{
+    font-weight: 100;
+}
+
+.content-11{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 25px;
+}
+
+.contact-content11 a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+.address-content11{
+    line-height: 1.7;
+    font-weight: 100;
 }
