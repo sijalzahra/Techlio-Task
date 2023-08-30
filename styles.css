@@ -281,7 +281,9 @@ header.scrolled .get-in-touch{
 .container-2::after{
     content: url(./images/about-bg.png);
     position: absolute;
-    right: 0;
+    right: -41px;
+    bottom: -60px;
+    transform: scale(0.6);
 }
 
 .img-2{
@@ -442,14 +444,17 @@ header.scrolled .get-in-touch{
 .application-categories::after{
     content: url(./images/circle-2.png);
     position: absolute;
-    right: 0;
-    bottom:0;
+    right: -12px;
+    bottom:-20px;
+    transform: scale(0.8);
 }
 
 .application-categories::before{
     content: url(./images/circle1.png);
     position: absolute;
-    left: 0;
+    left: -30px;
+    top: 140px;
+    transform: scale(0.7);
 }
 
 .content-5{
@@ -676,6 +681,10 @@ header.scrolled .get-in-touch{
     border-radius: 10px;
 }
 
+.team-member:hover{
+    
+}
+
 .member-pic{
     height: 30%;
 }
@@ -690,11 +699,14 @@ header.scrolled .get-in-touch{
 .member-info{
     text-align: center;
     height: 80%;
+    padding-top: 20px;
 }
 
 .member-info p{
     padding-top: 20px;
-    color: rgb(78, 77, 77);
+    color: rgb(97, 96, 96);
+    line-height: 1.7;
+    font-weight: 100;
 }
 
 .member-info .title{
@@ -768,7 +780,7 @@ header.scrolled .get-in-touch{
 .testimony-buttons{
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 200px;
     margin-top: 10px;
 }
 
@@ -800,9 +812,9 @@ header.scrolled .get-in-touch{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     max-width: 100%;
-    padding-top: 30px;
+    padding: 30px 30px;
 }
 
 .client-logo{
@@ -865,6 +877,11 @@ input, select, textarea {
     margin-bottom: 15px;
 }
 
+textarea{
+    resize: none;
+}
+
+
 input:focus, select:focus, textarea:focus {
     background-color: #e2f2fd;
 }
@@ -890,7 +907,7 @@ footer{
 
 .container-11{
     display: flex;
-    padding: 90px 20px;
+    padding: 80px 20px;
     gap: 250px;
 }
 
