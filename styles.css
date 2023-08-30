@@ -678,11 +678,8 @@ header.scrolled .get-in-touch{
     background-color: white;
     padding: 30px 20px;
     width: 100%;
+    height: auto;
     border-radius: 10px;
-}
-
-.team-member:hover{
-    
 }
 
 .member-pic{
