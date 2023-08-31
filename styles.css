@@ -967,6 +967,7 @@ header .fa-solid{
         z-index: 15;
         transition: 1s;
         color: #fff;
+        overflow-x: hidden;
     }
 
     #headerMenu a{
@@ -1216,7 +1217,8 @@ header .fa-solid{
         top:0;
         right: -200px;
         text-align: left;
-        z-index: 15;
+        z-index: 10;
+        overflow-x: hidden;
     }
 
     #headerMenu a{
