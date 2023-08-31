@@ -950,32 +950,45 @@ header .fa-solid{
     display: none;
 }
 
+.hidden-menu-bar{
+    display: none;
+}
+
 @media(max-width: 767px){
-    .header-menu ul{
+    .header-menu{
+        display: none;
+    }
+
+    .hidden-menu-bar ul{
         display: flex;
         flex-direction: column;
         padding-top: 50px;
     }
-    .header-menu{
-        position: absolute;
+    .hidden-menu-bar{
+        display: block;
+        position: fixed;
         background: rgb(20, 20, 20);
         height: 100vh;
         width: 200px;
         top:0;
-        right: -200px;
+        right: 0;
         text-align: left;
         z-index: 15;
         transition: 1s;
         color: #fff;
         overflow-x: hidden;
+        transform: translateX(-200);
     }
+
 
     #headerMenu a{
         color: #848585;
         font-size: 12px;
+        text-decoration: none;
+        padding-left: 10px;
     }
 
-    .header-menu i{
+    .hidden-menu-bar i{
         display: block;
         color: gray;
         position: absolute;
@@ -1204,30 +1217,38 @@ header .fa-solid{
 }
 
 @media (min-width:768px) and (max-width:992px){
-    .header-menu ul{
+    .header-menu{
+        display: none;
+    }
+
+    .hidden-menu-bar ul{
         display: flex;
         flex-direction: column;
         padding-top: 60px;
     }
-    .header-menu{
-        position: absolute;
+    .hidden-menu-bar{
+        display: block;
+        position: fixed;
         background: rgb(23, 23, 23);
         height: 100vh;
         width: 200px;
         top:0;
-        right: -200px;
+        right: 0;
         text-align: left;
         z-index: 10;
         overflow-x: hidden;
+        transform: translateX(-200);
+        transition: 1s;
     }
 
     #headerMenu a{
         text-decoration: none;
         color: rgb(122, 121, 121);
-        font-size: 15px;
+        text-decoration: none;
+        padding-left: 10px;
     }
 
-    .header-menu i{
+    .hidden-menu-bar i{
         display: block;
         color: gray;
         position: absolute;
