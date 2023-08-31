@@ -16,6 +16,7 @@ section{
 .container-0{
     background-image: url(./images/slider1-1.png);
     background-size: cover;
+    background-position: cover;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -44,7 +45,7 @@ section{
     gap: 30px;
 }
 
-.header-menu ul{
+.header-menu ul{ 
     display: flex;
     list-style-type: none;
     gap: 30px;
@@ -304,6 +305,7 @@ header.scrolled .get-in-touch{
     padding-left: 20px;
     width: 42.5%;
     position: relative;
+    right: 0;
 }
 
 .heading-content2{
@@ -905,7 +907,6 @@ footer{
 .container-11{
     display: flex;
     padding: 80px 20px;
-    gap: 250px;
 }
 
 .footer-logo{
@@ -913,6 +914,7 @@ footer{
     flex-direction: column;
     color: white;
     gap: 8px;
+    width: 37%;
 }
 
 .footer-logo-caption{
@@ -924,6 +926,7 @@ footer{
     flex-direction: column;
     color: white;
     gap: 25px;
+    width: 60%;
 }
 
 .contact-content11 a{
@@ -936,4 +939,513 @@ footer{
 .address-content11{
     line-height: 1.7;
     font-weight: 100;
+}
+
+header .fa-solid{
+    display: none;
+}
+
+.getInTouch-menu{
+    display: none;
+}
+
+@media(max-width: 767px){
+    .header-menu ul{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .header-menu{
+        position: absolute;
+        background: rgb(20, 20, 20);
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 15;
+        transition: 1s;
+        color: #fff;
+    }
+
+    #headerMenu a{
+        color: #848585;
+        font-size: 12px;
+    }
+
+    .header-menu i{
+        display: block;
+        color: gray;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    .header{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-bars i{
+        display: block;
+        position: absolute;
+        color: rgb(65, 104, 168);
+        right: 10px;
+        top: 25px;
+    }
+
+    .get-in-touch{
+        display: none;
+    }
+
+    .getInTouch-menu{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+
+    .get-in-touch-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #2c63c9;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px 30px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .img-1{
+        display: none;
+    }
+
+    .content-1{
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .img-2{
+        width: 100%;
+    }
+
+    .content-2{
+        width: 100%;
+    }
+
+    .heading-content2{
+        font-size: 20px;
+    }
+
+    .caption-content2{
+        font-size: 15px;
+    }
+
+    .para-content2{
+        font-size: 12px;
+    }
+
+    .caption-content2::before{
+        left: -33%
+    }
+
+    .container-2{
+        display: block;
+    }
+
+    .container-2::after{
+        transform: scale(0.5);
+        right: -51px;
+        bottom: -70px;
+    }
+
+    .container-3{
+        padding-top: 100px;
+    }
+
+    .heading1-content3{
+        font-size: 15px;
+    }
+
+    .heading2-content3{
+        font-size: 27px;
+    }
+
+    .all-services{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-content{
+        width: 80%;
+        padding: 20px 0px;
+    }
+
+    .container-4{
+        padding-top: 80px;
+    }
+
+    .content-4 h2{
+        font-size: 25px;
+    }
+
+    .process-img{
+        height: 300px;
+        width: 100%;
+    }
+
+    .application-categories::before{
+        display: none;
+    }
+
+    .application-categories::after{
+        display: none;
+    }
+
+    .heading1-content5{
+        font-size: 15px;
+    }
+
+    .heading2-content5{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(67, 67, 67);
+    }
+
+    .application-categories{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .heading-content6{
+        font-size: 30px;
+    }
+    .para-content6{
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .slider{
+        margin: 20px 20px
+    }
+
+    .team-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .heading1-content8{
+        font-size: 15px;
+    }
+
+    .heading2-content8{
+        font-size: 30px;
+        width: 90%;
+        text-align: center;
+        color: rgb(67, 67, 67);
+    }
+
+    .testimony{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    .container8-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .testi-img {
+        width: 55%;
+        height: 55%;
+        margin-top: 35px;
+    }
+
+    .testimony-content{
+        font-size: 10px;
+    }
+
+    .testimony-buttons{
+        gap:100px;
+    }
+
+    .heading-content9{
+        font-size: 30px;
+    }
+
+    .client{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content-10{
+        width: 85%;
+    }
+
+    .container-11{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .content-11{
+        gap: 7px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .header-menu ul{
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    .header-menu{
+        position: absolute;
+        background: rgb(23, 23, 23);
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 15;
+    }
+
+    #headerMenu a{
+        text-decoration: none;
+        color: rgb(122, 121, 121);
+        font-size: 15px;
+    }
+
+    .header-menu i{
+        display: block;
+        color: gray;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    .header{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .get-in-touch{
+        display: none;
+    }
+
+    .getInTouch-menu{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+
+    .get-in-touch-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #2c63c9;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px 30px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .menu-bars i{
+        display: block;
+        position: absolute;
+        color: rgb(34, 102, 203);
+        right: 10px;
+        top: 25px;
+    }
+
+    .img-1{
+        display: none;
+    }
+
+    .content-1{
+        width: 80%;
+    }
+
+    .img-2{
+        width: 50%;
+    }
+
+    .content-2{
+        width: 40%;
+    }
+
+    .heading-content2{
+        font-size: 27px;
+    }
+
+    .caption-content2{
+        font-size: 20px;
+    }
+
+    .para-content2{
+        font-size: 15px;
+    }
+
+    .caption-content2::before{
+        left: -33%
+    }
+
+    .container-2::after{
+        transform: scale(0.5);
+        right: -51px;
+        bottom: -70px;
+    }
+
+    .container-3{
+        padding-top: 70px;
+    }
+
+    .heading1-content3{
+        font-size: 20px;
+    }
+
+    .heading2-content3{
+        font-size: 35px;
+    }
+
+    .all-services{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .service-content{
+        flex-basis:40% ;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .container-4{
+        padding-top: 100px;
+    }
+
+    .content-4 h2{
+        font-size: 35px;
+    }
+
+    .process-img{
+        height: 450px;
+        width: 100%;
+    }
+
+    .application-categories::before{
+        display: none;
+    }
+
+    .application-categories::after{
+        display: none;
+    }
+
+    .heading1-content5{
+        font-size: 20px;
+    }
+
+    .heading2-content5{
+        font-size: 40px;
+        text-align: center;
+        color: rgb(67, 67, 67);
+    }
+
+    .application-categories{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .heading-content6{
+        font-size: 40px;
+    }
+    .para-content6{
+        font-size: 15px;
+        width: 85%;
+    }
+
+    .slider{
+        margin: 20px 20px
+    }
+
+    .team-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member{
+        flex-basis: 45%;
+    }
+
+    .heading1-content8{
+        font-size: 20px;
+    }
+
+    .heading2-content8{
+        font-size: 40px;
+        width: 90%;
+        text-align: center;
+        color: rgb(67, 67, 67);
+    }
+
+    .testimony{
+        display: flex;
+        width: 65%;
+    }
+
+    .container8-img{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .testimony-content{
+        font-size: 10px;
+    }
+
+    .testimony-buttons{
+        gap: 150px;
+    }
+
+    .heading-content9{
+        font-size: 40px;
+    }
+
+    .container-9{
+        padding-top: 50px;
+    }
+
+    .client{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .client-logo{
+        flex-basis: 40%;
+    }
+
+    .content-10{
+        width: 65%;
+    }
+
+    .content-11{
+        gap: 15px;
+    }
 }

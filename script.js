@@ -44,6 +44,16 @@ function updateSlider() {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
+let headerMenu = document.getElementById("headerMenu")
+
+function showMenu(){
+    headerMenu.style.right = "0";
+}
+
+function hideMenu(){
+    headerMenu.style.right = "-200px";
+}
+
 
 
 
