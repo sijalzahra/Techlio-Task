@@ -44,15 +44,33 @@ function updateSlider() {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-let headerMenu = document.getElementById("headerMenu")
+// let headerMenu = document.getElementById("headerMenu")
 
-function showMenu(){
-    headerMenu.style.right = "0";
-}
+// function showMenu(){
+//     headerMenu.style.right = "0";
+// }
 
-function hideMenu(){
-    headerMenu.style.right = "-200px";
-}
+// function hideMenu(){
+//     headerMenu.style.right = "-200px";
+// }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const headerMenu = document.getElementById('headerMenu');
+    const showMenuIcon = document.getElementById('showMenu');
+    const hideMenuIcon = document.getElementById('hideMenu');
+
+    showMenuIcon.addEventListener('click', () => {
+        headerMenu.style.right = '0'; // Slide in from the right
+        showMenuIcon.style.display = 'none'; // Hide the menu bar icon
+        hideMenuIcon.style.display = 'block'; // Show the close icon
+    });
+
+    hideMenuIcon.addEventListener('click', () => {
+        headerMenu.style.right = '-300px'; // Slide out to the right
+        showMenuIcon.style.display = 'block'; // Show the menu bar icon
+        hideMenuIcon.style.display = 'none'; // Hide the close icon
+    });
+});
 
 
 

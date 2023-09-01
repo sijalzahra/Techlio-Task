@@ -959,43 +959,53 @@ header .fa-solid{
         display: none;
     }
 
-    .hidden-menu-bar ul{
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-    }
-    .hidden-menu-bar{
+    .hidden-menu-bar {
         display: block;
         position: fixed;
-        background: rgb(20, 20, 20);
-        height: 100vh;
+        top: 0;
+        right: -200px;
+        height: 100%;
         width: 200px;
-        top:0;
-        right: 0;
-        text-align: left;
-        z-index: 15;
-        transition: 1s;
-        color: #fff;
-        overflow-x: hidden;
-        transform: translateX(-200);
+        background: #000000;
+        transition: right 0.3s ease-in-out;
+        overflow-y: auto;
     }
-
-
-    #headerMenu a{
-        color: #848585;
-        font-size: 12px;
+    
+    .hidden-menu-bar ul {
+        list-style: none;
+        padding: 50px 20px;
+    }
+    
+    .hidden-menu-bar li {
+        margin-bottom: 10px;
+    }
+    
+    .hidden-menu-bar a {
         text-decoration: none;
-        padding-left: 10px;
+        color: #777676;
         font-size: 18px;
     }
-
-    .hidden-menu-bar i{
+    
+    .menu-bars i{
         display: block;
-        color: gray;
         position: absolute;
-        right: 5px;
-        top: 5px;
+        top: 20px;
+        right: 20px;
         cursor: pointer;
+        color: rgb(46, 104, 213);
+    }
+    
+    #headerMenu .fa-solid{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #515050;
+    }
+
+    .company-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .header{
@@ -1003,14 +1013,6 @@ header .fa-solid{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .menu-bars i{
-        display: block;
-        position: absolute;
-        color: rgb(65, 104, 168);
-        right: 10px;
-        top: 25px;
     }
 
     .get-in-touch{
@@ -1037,13 +1039,130 @@ header .fa-solid{
         border: none;
     }
 
-    .img-1{
+    .container-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .blocks-img{
+        width: 390px;
+    }
+
+    .longblock-1{
         display: none;
+    }
+    
+    .longblock-2{
+        position: absolute;
+        bottom: 220px;
+        left: 310px;
+        width: 20px;
+    }
+    
+    .longblock-3{
+        position: absolute;
+        bottom: 160px;
+        left: 60px;
+        width: 35px;
+    }
+    
+    .sheild-1{
+        position: absolute;
+        left: 1px;
+        bottom: 252px;
+        width: 58px;
+        height: 72px;
+        z-index: 2;
+    }
+    
+    .sheild-2{
+        position: absolute;
+        left: 309px;
+        bottom: 311px;
+        width: 23px;
+        z-index: 2;
+    }
+    
+    .laptop{
+        position: absolute;
+        left: 140px;
+        bottom: 241px;
+        width: 110px;
+        height: 113px;
+        z-index: 3;
+    }
+    
+    .laptop-2{
+        position: absolute;
+        left: 109px;
+        bottom: 219px;
+        width: 194px;
+        height: 118px;
+        z-index: 2;
+    }
+    
+    .laptop-3{
+        position: absolute;
+        left: 109px;
+        bottom: 298px;
+        width: 157px;
+        height: 70px;
+        z-index: 2;
+    }
+    
+    .laptop-4{
+        position: absolute;
+        left: 228px;
+        bottom: 267px;
+        height: 62px;
+        z-index: 4;
+    }
+    
+    .right-light{
+        position: absolute;
+        left: 333px;
+        bottom: 269px;
+        height: 157px;
+        z-index: 2;
+    }
+    
+    .man-laptop{
+        position: absolute;
+        left: 47px;
+        bottom: 173px;
+        width: 69px;
+        z-index: 2;
+    }
+    
+    .lower-block-man{
+        position: absolute;
+        left: 271px;
+        bottom: 158px;
+        height: 75px;
+        z-index: 2;
+    }
+    
+    .lower-block-light{
+        position: absolute;
+        left: 259px;
+        bottom: 157px;
+        height: 107px;
+        z-index: 3;
     }
 
     .content-1{
         width: 100%;
-        padding: 0px 50px;
+        padding: 0px 39px;
+        gap: 8px;
+    }
+
+    .c1-bigfonts p{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    .c1-para{
+        font-size: 12px;
     }
 
     .img-2{
@@ -1052,6 +1171,7 @@ header .fa-solid{
 
     .content-2{
         width: 100%;
+        padding-top: 50px;
     }
 
     .heading-content2{
@@ -1063,7 +1183,10 @@ header .fa-solid{
     }
 
     .para-content2{
-        font-size: 12px;
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 1.5;
+        color: rgb(90, 90, 90);
     }
 
     .caption-content2::before{
@@ -1077,7 +1200,7 @@ header .fa-solid{
     .container-2::after{
         transform: scale(0.5);
         right: -51px;
-        bottom: -70px;
+        height: 400px;
     }
 
     .container-3{
@@ -1108,12 +1231,15 @@ header .fa-solid{
     }
 
     .content-4 h2{
-        font-size: 25px;
+        font-size: 30px;
+        padding-top: 10px;
+        font-weight: lighter;
     }
 
     .process-img{
-        height: 300px;
+        height: 200px;
         width: 100%;
+        margin-top: 10px;
     }
 
     .application-categories::before{
@@ -1141,14 +1267,22 @@ header .fa-solid{
 
     .heading-content6{
         font-size: 30px;
+        font-weight: lighter;
     }
     .para-content6{
-        font-size: 12px;
-        width: 90%;
+        font-size: 15px;
+        width: 85%;
+        font-weight: lighter;
+        line-height: 1.5;
+        color: gray;
     }
 
     .slider{
         margin: 20px 20px
+    }
+
+    .prev-button, .next-button{
+        width: 30px;
     }
 
     .team-info{
@@ -1170,7 +1304,7 @@ header .fa-solid{
     .testimony{
         display: flex;
         flex-direction: column;
-        width: 65%;
+        width: 55%;
     }
 
     .container8-img{
@@ -1185,7 +1319,7 @@ header .fa-solid{
     }
 
     .testimony-content{
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .testimony-buttons{
@@ -1203,7 +1337,21 @@ header .fa-solid{
     }
 
     .content-10{
-        width: 85%;
+        width: 95%;
+    }
+
+    .container-10-form{
+        width: 95%;
+    }
+
+    .heading-content10{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    .para-content10{
+        font-weight: lighter;
+        width: 100%;
     }
 
     .container-11{
@@ -1222,42 +1370,55 @@ header .fa-solid{
         display: none;
     }
 
-    .hidden-menu-bar ul{
-        display: flex;
-        flex-direction: column;
-        padding-top: 60px;
-    }
-    .hidden-menu-bar{
+    .hidden-menu-bar {
         display: block;
         position: fixed;
-        background: rgb(23, 23, 23);
-        height: 100vh;
-        width: 200px;
-        top:0;
+        top: 0;
         right: -200px;
-        text-align: left;
-        z-index: 10;
-        overflow-x: hidden;
-        transform: translateX(-200);
-        transition: 1s;
+        height: 100%;
+        width: 200px;
+        background: #000000;
+        transition: right 0.3s ease-in-out;
+        overflow-y: auto;
     }
-
-    #headerMenu a{
+    
+    .hidden-menu-bar ul {
+        list-style: none;
+        padding: 50px 20px;
+    }
+    
+    .hidden-menu-bar li {
+        margin-bottom: 10px;
+    }
+    
+    .hidden-menu-bar a {
         text-decoration: none;
-        color: rgb(122, 121, 121);
-        text-decoration: none;
-        padding-left: 10px;
+        color: #777676;
         font-size: 18px;
     }
-
-    .hidden-menu-bar i{
+    
+    .menu-bars i{
         display: block;
-        color: gray;
         position: absolute;
-        right: 5px;
-        top: 5px;
+        top: 20px;
+        right: 20px;
         cursor: pointer;
+        color: rgb(46, 104, 213);
     }
+    
+    #headerMenu .fa-solid{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #515050;
+    }
+
+    .company-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   
 
     .header{
         background-color: white;
@@ -1290,20 +1451,116 @@ header .fa-solid{
         border: none;
     }
 
-    .menu-bars i{
-        display: block;
-        position: absolute;
-        color: rgb(34, 102, 203);
-        right: 10px;
-        top: 25px;
+    .blocks-img{
+        width: 450px;
+        top: 0;
+        margin-top: 130px;
     }
 
-    .img-1{
-        display: none;
+    .longblock-1{
+       display: none;
+    }
+    
+    .longblock-2{
+        position: absolute;
+        bottom: 180px;
+        left: 330px;
+        width: 40px;
+    }
+    
+    .longblock-3{
+        position: absolute;
+        bottom: 155px;
+        left: 60px;
+        width: 50px;
+    }
+    
+    .sheild-1{
+        position: absolute;
+        left: 1px;
+        bottom: 235px;
+        width: 63px;
+        height: 80px;
+        z-index: 2;
+    }
+    
+    .sheild-2{
+        position: absolute;
+        left: 329px;
+        bottom: 360px;
+        width: 46px;
+        z-index: 2;
+    }
+    
+    .laptop{
+        position: absolute;
+        left: 156px;
+        bottom: 217px;
+        width: 135px;
+        height: 134px;
+        z-index: 3;
+    }
+    
+    .laptop-2{
+        position: absolute;
+        left: 125px;
+        bottom: 196px;
+        width: 229px;
+        height: 134px;
+        z-index: 2;
+    }
+    
+    .laptop-3{
+        position: absolute;
+        left: 122px;
+        bottom: 293px;
+        width: 193px;
+        height: 86px;
+        z-index: 2;
+    }
+    
+    .laptop-4{
+        position: absolute;
+        left: 262px;
+        bottom: 250px;
+        height: 77px;
+        z-index: 4;
+    }
+    
+    .right-light{
+        position: absolute;
+        left: 386px;
+        bottom: 253px;
+        height: 174px;
+        z-index: 2;
+    }
+    
+    .man-laptop{
+        position: absolute;
+        left: 61px;
+        bottom: 149px;
+        width: 76px;
+        z-index: 2;
+    }
+    
+    .lower-block-man{
+        position: absolute;
+        left: 310px;
+        bottom: 130px;
+        height: 87px;
+        z-index: 2;
+    }
+    
+    .lower-block-light{
+        position: absolute;
+        left: 297px;
+        bottom: 131px;
+        height: 124px;
+        z-index: 3;
     }
 
     .content-1{
-        width: 80%;
+        width: 100%;
     }
 
     .img-2{
@@ -1331,9 +1588,10 @@ header .fa-solid{
     }
 
     .container-2::after{
-        transform: scale(0.5);
+        transform: scale(0.7);
         right: -51px;
         bottom: -70px;
+        height: 450px;
     }
 
     .container-3{
@@ -1355,7 +1613,7 @@ header .fa-solid{
     }
 
     .service-content{
-        flex-basis:40% ;
+        flex-basis:30% ;
         width: 100%;
         padding: 20px 0px;
     }
@@ -1409,6 +1667,10 @@ header .fa-solid{
         margin: 20px 20px
     }
 
+    .prev-button, .next-button{
+        width: 50px;
+    }
+
     .team-info{
         display: flex;
         flex-wrap: wrap;
@@ -1432,7 +1694,7 @@ header .fa-solid{
 
     .testimony{
         display: flex;
-        width: 65%;
+        width: 50%;
     }
 
     .container8-img{
@@ -1464,11 +1726,11 @@ header .fa-solid{
     }
 
     .client-logo{
-        flex-basis: 40%;
+        flex-basis: 20%;
     }
 
     .content-10{
-        width: 65%;
+        width: 45%;
     }
 
     .content-11{

@@ -33,7 +33,7 @@
 
                   
                     <div class="hidden-menu-bar"  id="headerMenu">
-                            <i class="fa-solid fa-xmark" id="hideMenu" onclick="hideMenu()"></i>
+                            <i class="fa-solid fa-xmark" id="hideMenu"></i>
                         
                         <div class="getInTouch-menu">
                             <button class="get-in-touch-2">Get in Touch</button>
@@ -52,7 +52,7 @@
                     </div>  
 
                     <div class="menu-bars">
-                            <i class="fa-solid fa-bars" id="showMenu" onclick="showMenu()"></i>
+                            <i class="fa-solid fa-bars" id="showMenu"></i>
                         
                     </div>
                 </header>
@@ -478,22 +478,25 @@
                         <div class="para-content10">
                             <p>We're the full package! Reach out and we'll see how we can help.</p>
                         </div>
-
-                        <form action="" method="post">
-                            <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                            <select id="reason" name="reason" required>
-                                <option value="option">Reason of Contact</option>
-                                <option value="option1">Option 1</option>
-                                <option value="option2">Option 2</option>
-                                <option value="option3">Option 3</option>
-                                <option value="option4">Option 4</option>
-                            </select>
-                            <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
-                            <button type="submit">
-                                Send Message
-                            </button>
-                        </form>
+                        
+                        <div class="container-10-form">
+                            <form action="" method="post">
+                                <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <select id="reason" name="reason" required>
+                                    <option value="option">Reason of Contact</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                    <option value="option4">Option 4</option>
+                                </select>
+                                <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+                                <button type="submit">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        
                     </div>
               </div>
 
