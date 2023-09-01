@@ -1003,6 +1003,7 @@ header .fa-solid{
         right: 20px;
         cursor: pointer;
         color: rgb(46, 104, 213);
+        font-size: 23px;
     }
     
     #headerMenu .fa-solid{
@@ -1010,6 +1011,7 @@ header .fa-solid{
       right: 10px;
       top: 10px;
       color: #515050;
+      font-size: 25px;
     }
 
     .company-logo{
@@ -1048,6 +1050,7 @@ header .fa-solid{
         padding: 10px 30px;
         cursor: pointer;
         border: none;
+        margin: 20px 0px;
     }
 
     .container-1{
