@@ -1131,17 +1131,17 @@ header .fa-solid{
     
     .right-light{
         position: absolute;
-        left: 346px;
-        bottom: 269px;
+        left: 371px;
+        bottom: 285px;
         height: 117px;
         z-index: 2;
     }
     
     .man-laptop{
         position: absolute;
-        left: 47px;
-        bottom: 173px;
-        width: 69px;
+        left: 55px;
+        bottom: 186px;
+        width: 71px;
         z-index: 2;
     }
     
@@ -1541,9 +1541,9 @@ header .fa-solid{
     
     .right-light{
         position: absolute;
-        left: 386px;
-        bottom: 253px;
-        height: 174px;
+        left: 371px;
+        bottom: 285px;
+        height: 117px;
         z-index: 2;
     }
     
@@ -1553,6 +1553,7 @@ header .fa-solid{
         bottom: 149px;
         width: 76px;
         z-index: 2;
+
     }
     
     .lower-block-man{
