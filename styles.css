@@ -1465,110 +1465,110 @@ header .fa-solid{
 
     .blocks-img{
         width: 100%;
-        top: 0;
-        margin-top: 130px;
+        top: 30%
+
     }
 
     .longblock-1{
-       display: none;
+        display: none;
     }
     
     .longblock-2{
         position: absolute;
-        bottom: 180px;
-        left: 330px;
-        width: 40px;
+        left: 77%;
+        bottom: 35%;
+        width: 6%;
     }
     
     .longblock-3{
         position: absolute;
-        bottom: 155px;
-        left: 60px;
-        width: 50px;
+        bottom: 25%;
+        left: 18%;
+        width: 10%;
     }
     
     .sheild-1{
         position: absolute;
-        left: 1px;
-        bottom: 235px;
-        width: 63px;
-        height: 80px;
+        left: 0.5%;
+        bottom: 42%;
+        width: 13%;
+        height: 20%;
         z-index: 2;
     }
     
     .sheild-2{
         position: absolute;
-        left: 329px;
-        bottom: 360px;
-        width: 46px;
+        left: 77%;
+        bottom: 56.5%;
+        width: 5.5%;
         z-index: 2;
     }
     
     .laptop{
         position: absolute;
-        left: 156px;
-        bottom: 217px;
-        width: 135px;
-        height: 134px;
+        left: 36%;
+        bottom: 39%;
+        width: 30%;
+        height: 27%;
         z-index: 3;
     }
     
     .laptop-2{
         position: absolute;
-        left: 125px;
-        bottom: 196px;
-        width: 229px;
-        height: 134px;
+        left: 27%;
+        bottom: 34%;
+        width: 50%;
+        height: 30%;
         z-index: 2;
-    }
+}
+    
     
     .laptop-3{
         position: absolute;
-        left: 122px;
-        bottom: 293px;
-        width: 193px;
-        height: 86px;
+        left: 30%;
+        bottom: 52%;
+        width: 40%;
+        height: 18%;
         z-index: 2;
     }
     
     .laptop-4{
         position: absolute;
-        left: 262px;
-        bottom: 250px;
-        height: 77px;
+        left: 59%;
+        bottom: 45%;
+        height: 15%;
         z-index: 4;
     }
     
     .right-light{
         position: absolute;
-        left: 371px;
-        bottom: 285px;
-        height: 117px;
+        left: 84%;
+        bottom: 45%;
+        height: 35%;
         z-index: 2;
     }
     
     .man-laptop{
         position: absolute;
-        left: 61px;
-        bottom: 149px;
-        width: 76px;
+        left: 12.5%;
+        bottom: 27%;
+        width: 19%;
         z-index: 2;
-
     }
     
     .lower-block-man{
         position: absolute;
-        left: 310px;
-        bottom: 130px;
-        height: 87px;
-        z-index: 2;
+        left: 67%;
+        bottom: 25%;
+        height: 16%;
+        z-index: 3;
     }
     
     .lower-block-light{
         position: absolute;
-        left: 297px;
-        bottom: 131px;
-        height: 124px;
+        left: 65%;
+        bottom: 25%;
+        height: 21%;
         z-index: 3;
     }
 
