@@ -1604,7 +1604,7 @@ header .fa-solid{
     }
 
     .container-2::after{
-        transform: scale(0.7);
+        transform: scale(0.5);
         right: -51px;
         bottom: -70px;
         height: 450px;
