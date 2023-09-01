@@ -1234,7 +1234,7 @@ header .fa-solid{
         height: 100vh;
         width: 200px;
         top:0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 10;
         overflow-x: hidden;
