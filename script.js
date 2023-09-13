@@ -65,51 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-let teamIndex = 0;
-const totalTeamMembers = 5;
-const teamMembersPerPage = 4; 
-
-function showTeamMembers() {
-    const teamMember = document.querySelectorAll(".team-member");
-    const teamInfo = document.querySelector(".team-info");
-
-    if (window.innerWidth <= 767) {
-        teamMember.forEach((div, index) => {
-            div.style.display = index === teamIndex ? "block" : "none";
-        });
-    } else {
-        teamMember.forEach((div, index) => {
-            div.style.display = "none";
-            if (index >= teamIndex && index < teamIndex + teamMembersPerPage) {
-                div.style.display = "block";
-            }
-        });
-    }
-
-    teamInfo.style.transform = `translateX(-${teamIndex}%)`;
-}
-
-
-showTeamMembers();
-
-document.getElementById("teamNext").addEventListener("click", () => {
-    if (teamIndex + 1 < totalTeamMembers) {
-        teamIndex++;
-    } else {
-        // If we're at the last team member, loop back to the first one
-        teamIndex = 0;
-    }
-    showTeamMembers();
-});
-
-document.getElementById("teamPrev").addEventListener("click", () => {
-    if (teamIndex > 0) {
-        teamIndex--;
-    } else {
-        teamIndex = totalTeamMembers - 1;
-    }
-    showTeamMembers();
-});
 
 const serviceContents = document.querySelectorAll('.service-content');
 const wholeWrapper = document.querySelector('.whole-wrapper');
@@ -175,7 +130,6 @@ serviceContents.forEach((serviceContent, index) => {
         wholeWrapper.classList.remove('hidden');
        
         if (laptopMediaQuery.matches || mobileMediaQuery.matches) {
-            // Apply flex-direction: column for both laptop and mobile views
             wholeWrapper.style.flexaDirection = 'column';
         }
 
@@ -215,3 +169,33 @@ serviceContents.forEach((serviceContent, index) => {
 })})
 
 
+const container = document.querySelector('.container-7');
+const teamMembers = document.querySelector('.team-info');
+const prevButton = document.getElementById('teamPrev');
+const nextButton = document.getElementById('teamNext');
+
+let scrollAmount = 0;
+
+prevButton.addEventListener('click', () => {
+    scrollAmount -= 300; 
+    if (scrollAmount < 0) {
+        scrollAmount = 0;
+    }
+    teamMembers.style.transform = `translateX(-${scrollAmount}px)`;
+});
+
+nextButton.addEventListener('click', () => {
+    scrollAmount += 300; 
+    const maxScroll = teamMembers.scrollWidth - container.clientWidth;
+    if (scrollAmount > maxScroll) {
+        scrollAmount = maxScroll;
+    }
+    teamMembers.style.transform = `translateX(-${scrollAmount}px)`;
+});
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

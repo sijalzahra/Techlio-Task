@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <title>Techlio PVT Ltd</title>
 </head>
 <body>
@@ -440,8 +442,7 @@
                             <div class="member-linkedin">
                                 <i class="fa-brands fa-linkedin" style="color: #2456ae;"></i>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
 
                     <div class="team-member">
@@ -509,7 +510,7 @@
                         Read What Others Have To Say
                     </div>
                 </div>
-                <div class="testimony-all">
+                <!-- <div class="testimony-all">
                     <div class="testimony">
                         <div class="container8-img">
                             <img class="testi-img" src="./images/testi-Image-2.png" alt="">
@@ -521,11 +522,56 @@
                             <h5>CO-Owner</h5>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimony">
+                            <div class="container8-img">
+                                <img class="testi-img" src="./images/testi-Image-2.png" alt="">
+                            </div>
+                            <div class="testimony-content">
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ad voluptates veritatis ea modi placeat quo est laborum quaerat quidem amet molestiae vitae, provident velit, quia rerum ipsa a dolore error incidunt maxime quam animi.</p>
+                                <h4><b>Kyle Merwin</b></h4>
+                                <h5>CO-Owner</h5>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimony">
+                            <div class="container8-img">
+                                <img class="testi-img" src="./images/testi-Image-2.png" alt="">
+                            </div>
+                            <div class="testimony-content">
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ad voluptates veritatis ea modi placeat quo est laborum quaerat quidem amet molestiae vitae, provident velit, quia rerum ipsa a dolore error incidunt maxime quam animi.</p>
+                                <h4><b>Kyle Merwin</b></h4>
+                                <h5>CO-Owner</h5>
+                            </div>
+                        </div>
+                      </div>
+                
+                      <div class="swiper-slide">
+                        <div class="testimony">
+                            <div class="container8-img">
+                                <img class="testi-img" src="./images/testi-Image-2.png" alt="">
+                            </div>
+                            <div class="testimony-content">
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ad voluptates veritatis ea modi placeat quo est laborum quaerat quidem amet molestiae vitae, provident velit, quia rerum ipsa a dolore error incidunt maxime quam animi.</p>
+                                <h4><b>Kyle Merwin</b></h4>
+                                <h5>CO-Owner</h5>
+                            </div>
+                        </div>
+                      </div>
+                
+                    </div>
                
                 <div class="testimony-buttons">
-                    <div><button class="testi-buttons" id="testi-prev-btn"><i class="fa-solid fa-angle-left"></i></button></div>
-                    <div><button class="testi-buttons" id="testi-next-btn"><i class="fa-solid fa-angle-right"></i></button></div>
+                    <div><buttons class="swiper-button-next" id="testi-prev-btn"></button></div>
+                    <div><button class="swiper-button-prev" id="testi-next-btn"></button></div>
                     
                   
                 </div>
@@ -625,6 +671,8 @@
               
 
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
     

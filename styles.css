@@ -20,7 +20,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-bottom: 7rem;
+    padding-bottom: 100px;
 }
 
 .header {
@@ -749,8 +749,10 @@ header.scrolled .get-in-touch{
     background-image: url(./images/team-bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
   }
 
   .heading-content7{
@@ -790,6 +792,7 @@ header.scrolled .get-in-touch{
     display: flex;
     gap: 20px;
     padding: 20px;
+    /* width: 700px; */
 }
 
 .team-member{
@@ -799,9 +802,11 @@ header.scrolled .get-in-touch{
     align-items: center;
     background-color: white;
     padding: 30px 20px;
-    width: 100%;
+    width: 292px;
     height: auto;
     border-radius: 10px;
+    flex-shrink: 0;
+
 }
 
 .member-pic{
@@ -828,10 +833,6 @@ header.scrolled .get-in-touch{
     color: rgb(97, 96, 96);
     line-height: 1.7;
     font-weight: 100;
-}
-
-.member-info-1{
-    height: 70%;
 }
 
 .member-linkedin{
@@ -881,58 +882,64 @@ header.scrolled .get-in-touch{
     padding-top: 30px;
 }
 
-.testimony{
-    background-color: rgba(0, 0, 0, 0.02);
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: left;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 50%;
-    border-radius: 20px;
-    transition: 0.5s ease;
+    left: 25%;
+  }
+
+  .testimony{
+  background-color: rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  border-radius: 20px;
+  transition: 0.5s ease;
 }
 
 .testimony-content{
-    padding: 10px;
-    line-height: 2;
- 
+  padding: 10px;
+  line-height: 2;
 }
 
 .testimony-content::after{
-    content: url(./images/Quotes.png);
-    position: absolute;
-    top: 10px;
-    right: 15px;
+  content: url(./images/Quotes.png);
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 .testimony-content p{
-    color: rgb(105, 105, 104);
+  color: rgb(105, 105, 104);
 }
 
 .testimony-content h5{
-    color: rgb(105, 105, 104);
-    font-weight: lighter;
+  color: rgb(105, 105, 104);
+  font-weight: lighter;
 }
 
 .testi-img{
-    width: 220px;
-    height: 230px;
-    padding: 7px;
+  width: 220px;
+  height: 230px;
+  padding: 7px;
 }
 
-.testimony-buttons{
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 10px;
-}
 
-.testi-buttons{
+.swiper-button-next, .swiper-button-prev{
     color: blue;
     border: none;
     background: none;
     cursor: pointer;
 }
-
 
 .container-9{
     margin-top: 50px;
@@ -1442,11 +1449,6 @@ header .fa-solid{
         width: 30px;
     }
 
-    .team-info{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .heading1-content8{
         font-size: 15px;
     }
@@ -1521,9 +1523,6 @@ header .fa-solid{
         gap: 7px;
     }
 
-    .team-member:not(:first-child) {
-        display: none;
-      }
 }
 
 @media (min-width:768px) and (max-width:992px){
@@ -1832,16 +1831,6 @@ header .fa-solid{
 
     .prev-button, .next-button{
         width: 50px;
-    }
-
-    .team-info{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .team-member{
-        flex-basis: 45%;
     }
 
     .heading1-content8{
